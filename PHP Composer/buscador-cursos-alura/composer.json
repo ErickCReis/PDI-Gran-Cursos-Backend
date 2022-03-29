@@ -1,0 +1,12 @@
+{
+  "name": "erickcreis/buscador-cursos",
+  "description": "Projeto que buscao os cursos no site da Alura",
+  "type": "library",
+  "authors": [
+    {
+      "name": "ErickCReis",
+      "email": "erickcorreareis@gmail.com"
+    }
+  ],
+  "require": {}
+}
