@@ -41,3 +41,10 @@
   - _phpunit_ para rodar testes;
   - _phpcs_ para verificar padrões de código;
   - _phan_ para executar uma análise estática da sintaxe do nosso código.
+
+#### Aula 05: Automatizando os processos com scripts
+- scripts são definidos dentro do `composer.json`.
+- scripts podem definir comandos que chamam ferramentas instaladas pelo Composer.
+- scripts podem chamar comandos do sistema operacional.
+- scripts podem chamar códigos PHP.
+- scripts podem ser associados ao evento.
