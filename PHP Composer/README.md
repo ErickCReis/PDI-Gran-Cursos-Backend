@@ -32,3 +32,12 @@
 - Para atualizar o arquivo `autoload.php` baseado no `composer.json`, podemos rodar o comando `composer dumpautoload`.
 - Para classes que não seguem o PSR-4, podemos definir um `classmap` dentro do `composer.json`.
 - Para carregar um biblioteca de funções automaticamente, podemos adicionar uma entrada `files` no `composer.json`.
+
+#### Aula 04: Ferramentas de qualidade de código
+- Através do flag `--dev` definimos que uma dependência não faz parte do ambiente de produção.
+- Caso desejarmos baixar as dependências de "produção" apenas podemos usar o flag `no-dev`.
+- Arquivos executáveis fornecidos por componentes instalados pelo composer ficam na pasta `vendor/bin`.
+- Conhecemos três ferramentas do mundo PHP:
+  - _phpunit_ para rodar testes;
+  - _phpcs_ para verificar padrões de código;
+  - _phan_ para executar uma análise estática da sintaxe do nosso código.

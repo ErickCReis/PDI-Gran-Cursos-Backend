@@ -1,5 +1,6 @@
 <?php
 
-function exibeMensagem(string $mensagem) {
+function exibeMensagem(string $mensagem)
+{
     echo $mensagem . PHP_EOL;
 }
