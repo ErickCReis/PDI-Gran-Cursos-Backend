@@ -13,7 +13,7 @@ class Buscador
     public function __construct(ClientInterface $httpClient, Crawler $crawler)
     {
         $this->httpClient = $httpClient;
-        $this->crawler = $crawler;
+        $this->crawler    = $crawler;
     }
 
     public function buscar(string $url): array
@@ -24,7 +24,7 @@ class Buscador
         $this->crawler->addHtmlContent($html);
 
         $elementosCursos = $this->crawler->filter('span.card-curso__nome');
-        $cursos = [];
+        $cursos          = [];
 
         foreach ($elementosCursos as $elemento) {
             $cursos[] = $elemento->textContent;

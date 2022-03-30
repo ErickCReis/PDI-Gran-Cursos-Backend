@@ -21,3 +21,14 @@
 - O arquivo `composer.lock` define todas as versões exatas instaladas.
 - O composer já gera um arquivo `autoload.php` para facilitar o carregamento das dependências.
 - Basta usar `require vendor/autoload.php`.
+
+#### Aula 03: Entendendo Autoload
+- Conhecemos a PSR-4 (_Autoloader_).
+- A PSR-4 define um padrão para o carregamento automático de classes.
+- O namespace da classe tem partes:
+  - O `vendor namespace` (ou namespace padrão ou _namespace prefixo_).
+    - O `vendor namespace` fica mapeado para uma pasta do projeto dentro do arquivo `composer.json`.
+  - Podemos ter um _sub-namespace_ que precisa ser representado através de pastas.
+- Para atualizar o arquivo `autoload.php` baseado no `composer.json`, podemos rodar o comando `composer dumpautoload`.
+- Para classes que não seguem o PSR-4, podemos definir um `classmap` dentro do `composer.json`.
+- Para carregar um biblioteca de funções automaticamente, podemos adicionar uma entrada `files` no `composer.json`.
