@@ -48,3 +48,11 @@
 - scripts podem chamar comandos do sistema operacional.
 - scripts podem chamar códigos PHP.
 - scripts podem ser associados ao evento.
+
+#### Aula 06: Publicando um pacote
+- O composer entende as tags de versão de um repositório Git.
+- O composer segue o conceito do versionamento semântico (_MAJOR.MINOR.PATCH_).
+- No `composer.json` podemos definir constraints (mais detalhes em https://getcomposer.org/doc/articles/versions.md).
+- Para distribuir e disponibilizar o seu projeto devemos:
+  - Criar um repositório no Github;
+  - Usar o packgist e associar com o repositório no Github.
