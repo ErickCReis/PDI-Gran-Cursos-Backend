@@ -21,3 +21,10 @@
 - Praticamos a criação de runtimes e threads com PHP;
 - Aprendemos diversas limitações da extensão `parallel`;
 - Conseguimos pegar valores de retorno de uma thread com a classe `Future`.
+
+#### Aula 04: Entendendo canais
+- Conhecemos o conceito de canais;
+- Vimos que canais podem ser utilizados para se comunicar entre threads, inclusive sem ser com a thread principal;
+- Entendemos a diferença entre canais com e sem buffer;
+- Aprendemos as vantagens e desvantagens de usar canais;
+- Vimos que é interessante fechar os canais para liberar recursos.
