@@ -16,3 +16,8 @@
 - Aprendemos que cada thread roda em um núcleo diferente do processador;
 - Conseguimos configurar um arquivo para ser executado de início na nova thread;
 - Vimos por alto sobre escalonamento de processos.
+
+#### Aula 03: Valores futuros
+- Praticamos a criação de runtimes e threads com PHP;
+- Aprendemos diversas limitações da extensão `parallel`;
+- Conseguimos pegar valores de retorno de uma thread com a classe `Future`.
