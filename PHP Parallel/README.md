@@ -28,3 +28,9 @@
 - Entendemos a diferença entre canais com e sem buffer;
 - Aprendemos as vantagens e desvantagens de usar canais;
 - Vimos que é interessante fechar os canais para liberar recursos.
+
+#### Aulas 05: Mais sobre Threads
+- Definimos melhor alguns conceitos aprendidos até aqui;
+- Otimizamos o uso dos recursos do sistema, criando menos threads;
+- Entendemos a diferença de programação assíncrona e programação paralela;
+- Conhecemos o conceito de controle de processos e vimos algumas diferenças com controle de threads.
