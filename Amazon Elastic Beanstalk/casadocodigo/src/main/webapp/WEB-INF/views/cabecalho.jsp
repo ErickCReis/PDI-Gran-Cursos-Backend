@@ -12,7 +12,7 @@
 <link href="https://plus.googlecom/108540024862647200608"
 	rel="publisher" />
 <title>Livros de Java, SOA, Android, iPhone, Ruby on Rails e
-	muito mais - Casa do Código</title>
+	muito mais - Casa do Cï¿½digo</title>
 <link href="${cssPath}/cssbase-min.css" rel="stylesheet"
 	type="text/css" media="all" />
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700'
@@ -49,6 +49,7 @@
         <a href="${s:mvcUrl('HC#index').build() }" id="logo">
         <div id="bloco_logo">
           <img src="${imagensPath}/cdc-logo.svg" alt="Casa do Codigo">
+          <img id="black_friday" src="<c:url value="/resources/imagens/black_friday.png"/>"/>
         </div>
         </a>
       <div id="header-content">
@@ -59,7 +60,7 @@
                       	<s:message code="menu.carrinho"
                       		arguments="${carrinhoCompras.quantidade }" />
                       </a>
-                      
+
                   </li>
                   <li>
                       <a href="/pages/sobre-a-casa-do-codigo" rel="nofollow">
@@ -86,7 +87,7 @@
         <li class="category">
         		<a href="${s:mvcUrl('HC#index').build() }">
         			<fmt:message key="navegacao.categoria.home" /></a>
-        	
+
                 <li class="category"><a href="/collections/livros-de-agile">
                 		<fmt:message key="navegacao.categoria.agile" /></a>
                 <li class="category"><a href="/collections/livros-de-front-end">
@@ -108,4 +109,3 @@
                   </a>
     </ul>
   </nav>
-    

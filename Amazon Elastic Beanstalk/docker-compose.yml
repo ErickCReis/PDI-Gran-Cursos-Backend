@@ -1,0 +1,33 @@
+version: "3.0"
+
+services:
+  container_mysql:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: "casadocodigo"
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
+
+  container_casadocodigo:
+    image: erickreis/casadocodigo:v2-dev
+    environment:
+      USUARIO: root
+      SENHA: ""
+      JDBC_CONNECTION_STRING: "jdbc:mysql://container_mysql:3306/casadocodigo"
+      TZ: America/Sao_Paulo
+    depends_on:
+      container_mysql:
+        condition: service_healthy
+
+  conatiner_nginx:
+    image: erickreis/nginx_casadocodigo:v1-dev
+    ports:
+      - 80:80
+    depends_on:
+      - container_casadocodigo
+
